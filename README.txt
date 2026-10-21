@@ -12,4 +12,4 @@ CivicLibrary v0.1.1 is pinned to civiccore==0.3.0.
 
 Set CIVICLIBRARY_WORKPAPER_DB_URL to persist program answers and collection guidance. Without it, CivicLibrary remains deterministic and stateless.
 
-Apache 2.0 code. CC BY 4.0 docs.
+License: Code: AGPL-3.0-only, with the TownLight Public Institution Exception for qualifying deployments. See LICENSE and LICENSE-EXCEPTION.md. Documentation: CC BY 4.0 (LICENSE-DOCS).
