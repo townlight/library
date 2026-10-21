@@ -1,10 +1,12 @@
-# CivicLibrary User Manual
+<a id="civiclibrary-user-manual"></a>
+
+# Townlight Library User Manual
 
 ## Non-Technical Staff
 
-CivicLibrary helps library staff prepare cited policy answers, answer program and event questions, search collection metadata, draft collection-development guidance, and optionally retrieve saved program/collection workpapers.
+Townlight Library helps library staff prepare cited policy answers, answer program and event questions, search collection metadata, draft collection-development guidance, and optionally retrieve saved program/collection workpapers.
 
-Librarians remain responsible for every answer, reference result, and collection guidance note. CivicLibrary does not access patron records, connect to an ILS, manage circulation, place holds, assess fines, replace professional reference service, or replace library systems of record.
+Librarians remain responsible for every answer, reference result, and collection guidance note. Townlight Library does not access patron records, connect to an ILS, manage circulation, place holds, assess fines, replace professional reference service, or replace library systems of record.
 
 ## IT / Technical
 
@@ -21,7 +23,7 @@ Optional persistence: set `CIVICLIBRARY_WORKPAPER_DB_URL` to enable SQLAlchemy-b
 
 Primary endpoints:
 
-- `GET /health` - service and CivicCore version.
+- `GET /health` - service and Townlight Core version.
 - `GET /civiclibrary` - public sample UI.
 - `POST /api/v1/civiclibrary/policy-answer` - cited library policy answer draft.
 - `POST /api/v1/civiclibrary/program-answer` - program and event answer draft.
@@ -30,6 +32,6 @@ Primary endpoints:
 
 ## Architecture
 
-![CivicLibrary architecture](docs/architecture-civiclibrary.svg)
+![Townlight Library architecture](docs/architecture-civiclibrary.svg)
 
-CivicLibrary is a module on top of CivicCore. v0.1.1 is deterministic and local: no patron-record access, circulation actions, holds, fines, ILS replacement, live LLM calls, or connector runtime is shipped.
+Townlight Library is a module on top of Townlight Core. v0.1.1 is deterministic and local: no patron-record access, circulation actions, holds, fines, ILS replacement, live LLM calls, or connector runtime is shipped.

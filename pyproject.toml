@@ -5,7 +5,7 @@ build-backend = "hatchling.build"
 [project]
 name = "civiclibrary"
 version = "0.1.1"
-description = "CivicLibrary foundation for library policy, program, reference, and collection support."
+description = "Townlight Library foundation for library policy, program, reference, and collection support."
 readme = "README.md"
 requires-python = ">=3.11"
 license = { text = "AGPL-3.0-only" }

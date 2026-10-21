@@ -27,7 +27,7 @@ def search_collection_metadata(query: str, items: list[CollectionItem]) -> Refer
         items=visible,
         patron_records_excluded=len(visible) != len(items),
         boundary=(
-            "CivicLibrary searches collection metadata only. Patron borrowing, holds, fines, "
+            "Townlight Library searches collection metadata only. Patron borrowing, holds, fines, "
             "and account records are excluded."
         ),
     )

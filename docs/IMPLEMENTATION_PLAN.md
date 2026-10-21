@@ -1,4 +1,6 @@
-# CivicLibrary Implementation Plan
+<a id="civiclibrary-implementation-plan"></a>
+
+# Townlight Library Implementation Plan
 
 ## v0.1.0
 
@@ -14,4 +16,4 @@ Ship the runtime foundation only:
 - Isolated deployment profile.
 - Patron-privacy-gated connector design.
 - Librarian review queue.
-- Optional local LLM prompt layer through CivicCore.
+- Optional local LLM prompt layer through Townlight Core.

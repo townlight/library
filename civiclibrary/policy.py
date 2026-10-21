@@ -31,7 +31,7 @@ def answer_policy_question(
         citations=citations,
         librarian_review_required=True,
         boundary=(
-            "CivicLibrary supports library policy and program information. It does not access "
+            "Townlight Library supports library policy and program information. It does not access "
             "patron records, replace professional reference service, or act as an ILS."
         ),
     )

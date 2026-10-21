@@ -1,8 +1,10 @@
-# CivicLibrary Architecture
+<a id="civiclibrary-architecture"></a>
 
-CivicLibrary v0.1.0 is a deterministic FastAPI module over CivicCore. It supports library policy answers, program and event questions, collection-metadata reference assistance, and collection-development guidance while explicitly avoiding patron records, ILS integration, live connectors, legal advice, and professional-reference replacement.
+# Townlight Library Architecture
 
-![CivicLibrary architecture](architecture-civiclibrary.svg)
+Townlight Library v0.1.0 is a deterministic FastAPI module over Townlight Core. It supports library policy answers, program and event questions, collection-metadata reference assistance, and collection-development guidance while explicitly avoiding patron records, ILS integration, live connectors, legal advice, and professional-reference replacement.
+
+![Townlight Library architecture](architecture-civiclibrary.svg)
 
 ## Shipped
 
