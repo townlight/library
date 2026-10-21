@@ -1,4 +1,4 @@
-"""FastAPI runtime foundation for CivicLibrary."""
+"""FastAPI runtime foundation for Townlight Library."""
 
 import os
 
@@ -20,9 +20,9 @@ from civiclibrary.public_ui import render_public_lookup_page
 from civiclibrary.reference import CollectionItem, search_collection_metadata
 
 app = FastAPI(
-    title="CivicLibrary",
+    title='Townlight Library',
     version=__version__,
-    description="Library policy, program, reference, and collection support foundation.",
+    description='Library policy, program, reference, and collection support foundation.',
 )
 
 _workpaper_repository: LibraryWorkpaperRepository | None = None
@@ -74,7 +74,7 @@ def root() -> dict[str, str]:
         "version": __version__,
         "status": "library policy and reference foundation",
         "message": (
-            "CivicLibrary policy Q&A, program Q&A, collection-metadata reference support, "
+            "Townlight Library policy Q&A, program Q&A, collection-metadata reference support, "
             "collection guidance, optional database-backed program/collection workpapers, and "
             "public UI foundation are online; patron record access, "
             "ILS replacement, circulation actions, live LLM calls, and connector runtime are "
@@ -120,7 +120,7 @@ def program_answer(request: ProgramQuestionRequest) -> dict[str, object]:
 @app.get("/api/v1/civiclibrary/program-answer/{answer_id}")
 def get_program_answer(answer_id: str) -> dict[str, object]:
     if _workpaper_database_url() is None:
-        raise HTTPException(status_code=503, detail={"message":"CivicLibrary workpaper persistence is not configured.","fix":"Set CIVICLIBRARY_WORKPAPER_DB_URL to retrieve persisted program answers."})
+        raise HTTPException(status_code=503, detail={"message":"Townlight Library workpaper persistence is not configured.","fix":"Set CIVICLIBRARY_WORKPAPER_DB_URL to retrieve persisted program answers."})
     stored = _get_workpaper_repository().get_program_answer(answer_id)
     if stored is None:
         raise HTTPException(status_code=404, detail={"message":"Program answer record not found.","fix":"Use an answer_id returned by POST /api/v1/civiclibrary/program-answer."})
@@ -148,7 +148,7 @@ def collection_guidance(request: CollectionGuidanceRequest) -> dict[str, object]
 @app.get("/api/v1/civiclibrary/collection-guidance/{guidance_id}")
 def get_collection_guidance(guidance_id: str) -> dict[str, object]:
     if _workpaper_database_url() is None:
-        raise HTTPException(status_code=503, detail={"message":"CivicLibrary workpaper persistence is not configured.","fix":"Set CIVICLIBRARY_WORKPAPER_DB_URL to retrieve persisted collection guidance."})
+        raise HTTPException(status_code=503, detail={"message":"Townlight Library workpaper persistence is not configured.","fix":"Set CIVICLIBRARY_WORKPAPER_DB_URL to retrieve persisted collection guidance."})
     stored = _get_workpaper_repository().get_collection_guidance(guidance_id)
     if stored is None:
         raise HTTPException(status_code=404, detail={"message":"Collection guidance record not found.","fix":"Use a guidance_id returned by POST /api/v1/civiclibrary/collection-guidance."})

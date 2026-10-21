@@ -1,8 +1,10 @@
-# CivicLibrary Discussion Seeds
+<a id="civiclibrary-discussion-seeds"></a>
+
+# Townlight Library Discussion Seeds
 
 ## What library policy sources should ship first?
 
-Which circulation, meeting-room, privacy, reconsideration, accessibility, and programming policies should CivicLibrary prioritize for staff-reviewed answers?
+Which circulation, meeting-room, privacy, reconsideration, accessibility, and programming policies should Townlight Library prioritize for staff-reviewed answers?
 
 ## What program and event information matters most?
 
